@@ -5,7 +5,7 @@ import './App.css';
 import { Header } from './header';
 import Map from './Map';
 import { Landing } from './landing';
-import { Footer } from './footer';
+// import { Footer } from './footer';
 
 function App() {
     return (
@@ -17,7 +17,7 @@ function App() {
                         <Route exact path='/' component={Landing} />
                         <Route exact path='/map' component={Map} />
                     </div>
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
             </BrowserRouter>
         </div>

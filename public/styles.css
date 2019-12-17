@@ -18,11 +18,19 @@ a:visited {
     background-image: url(/images/light-bulb.jpg);
     background-size: cover;
     height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .map-page {
     background-color: #faf0dc;
     height: 100%;
+    width: auto;
     margin-bottom: -50px;
-    background-size: cover;
+}
+
+.my-map {
+    height: 500px;
 }

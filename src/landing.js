@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Map from './Map';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -30,10 +31,7 @@ export function Landing() {
                         <p>
                             A paragraph is a series of related sentences
                             developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
+                            think about paragraphs in terms of thematic unity
                         </p>
                     </Paper>
                 </Grid>
@@ -49,22 +47,6 @@ export function Landing() {
                             supports one central, unified idea. Paragraphs add
                             one idea at a time to your broader argument.
                         </p>
-                        <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
-                        </p>
-                        <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
-                        </p>
                     </Paper>
                 </Grid>
                 <Grid item xs={2}></Grid>
@@ -72,15 +54,14 @@ export function Landing() {
                     <Paper className={classes.paper}>
                         <p>
                             A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
+                            developing a central idea, called the topic.
                         </p>
                     </Paper>
                 </Grid>
             </Grid>
+            <div>
+                <Map />
+            </div>
         </div>
     );
 }
