@@ -1,12 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './App.css';
+import { Header } from './header';
 import Map from './Map';
+import { Landing } from './landing';
+import { Footer } from './footer';
 
 function App() {
     return (
         <div className='App'>
-            <Map />
+            <BrowserRouter>
+                <div>
+                    <Header />
+                    <div className='wrapper'>
+                        <Route exact path='/' component={Landing} />
+                        <Route exact path='/map' component={Map} />
+                    </div>
+                    <Footer />
+                </div>
+            </BrowserRouter>
         </div>
     );
 }

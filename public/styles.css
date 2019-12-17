@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#landing {
+    background-image: url(/images/light-bulb.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.map-page {
+    background-color: #faf0dc;
+    height: 100%;
+    margin-bottom: -50px;
+    background-size: cover;
+}
