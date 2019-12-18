@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     button: {
         fontSize: 20 + 'px',
         height: 70 + 'px',
-        width: 200 + 'px'
+        width: 150 + 'px'
     }
 }));
 
@@ -28,7 +28,7 @@ export function Header() {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={2}>
+            <Grid container spacing={0}>
                 <Grid container item xs={2}>
                     <Link to='/'>
                         <img

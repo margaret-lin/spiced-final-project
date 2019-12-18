@@ -61,6 +61,7 @@ export function Contact() {
                         className={classes.form}
                         noValidate
                         autoComplete='off'
+                        sm={4}
                     >
                         <TextField
                             label='Name'
