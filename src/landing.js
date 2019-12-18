@@ -7,6 +7,7 @@ import { Learn } from './learn';
 import { GetInvolved } from './get-involved';
 import { Faq } from './faq';
 import { Contact } from './contact';
+import { Footer } from './footer';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -77,6 +78,9 @@ export function Landing() {
             </div>
             <div>
                 <Contact />
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     );

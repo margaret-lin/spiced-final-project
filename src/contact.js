@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
         paddingLeft: '30px'
     },
     form: {
-        width: '450px',
+        width: '350px',
         height: '400px',
         lineHeight: '5px',
         display: 'flex',
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'space-evenly'
     },
     textField: {
-        width: '400px'
+        width: '300px'
     }
 }));
 
