@@ -31,6 +31,62 @@ a:visited {
     margin-bottom: -50px;
 }
 
-.my-map {
-    height: 500px;
+.map-container {
+    height: 725px;
+}
+
+#learn-container {
+    background-image: url(/images/sprout.jpg);
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#learn-title {
+    font-size: 80px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#get-involved-container {
+    height: 700px;
+    background-color: #ffdcd7;
+    color: #87222e;
+    padding: 50px;
+}
+
+#get-involved-title {
+    font-size: 80px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+#faq-container {
+    background-image: url(/images/greenfield.jpg);
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#faq-title {
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 60px;
+    text-align: left;
+    margin-left: 200px;
+    color: teal;
+}
+
+#get-in-touch-title {
+    font-size: 80px;
+    text-align: right;
+    margin-top: 0;
+    padding-top: 60px;
+    margin-right: 330px;
 }
