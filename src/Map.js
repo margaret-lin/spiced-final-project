@@ -9,7 +9,7 @@ const mapboxToken = process.env.REACT_APP_MAPBOX_TOKEN;
 export default function Map() {
     const [viewport, setViewport] = useState({
         width: 100 + 'vw',
-        height: 500 + 'px',
+        height: 700 + 'px',
         latitude: 37.7577,
         longitude: -122.4376,
         zoom: 3
@@ -19,7 +19,7 @@ export default function Map() {
 
     return (
         <div className='map-page'>
-            <div>
+            <div className='map-container'>
                 <ReactMapGL
                     {...viewport}
                     mapboxApiAccessToken={mapboxToken}
@@ -27,7 +27,7 @@ export default function Map() {
                     mapStyle='mapbox://styles/maaaama/ck477vjqb2oq91cowyitdnqcm'
                     scrollZoom={false}
                 />
-                <p>Writing something in map...</p>
+                {/* <p>Writing something in map...</p> */}
             </div>
         </div>
     );
