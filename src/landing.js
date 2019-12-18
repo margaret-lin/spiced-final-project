@@ -12,8 +12,7 @@ import { Footer } from './footer';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-        backgroundColor: '#FAF0DC',
-        height: 100 + 'vh'
+        backgroundColor: '#FAF0DC'
     },
     paper: {
         padding: theme.spacing(2),
@@ -29,7 +28,7 @@ export function Landing() {
 
     return (
         <div className={classes.root} id='landing-page'>
-            <Grid container spacing={3} id='landing'>
+            <Grid container spacing={0} id='landing'>
                 <Grid item xs={2}></Grid>
                 <Grid item xs={3}>
                     <Paper className={classes.paper}>
@@ -40,7 +39,7 @@ export function Landing() {
                         </p>
                     </Paper>
                 </Grid>
-                <Grid item xs={7}></Grid>
+                <Grid item xs={6}></Grid>
                 <Grid item xs={7}></Grid>
                 <Grid item xs={4}>
                     <Paper className={classes.paper}>
@@ -51,15 +50,6 @@ export function Landing() {
                             paragraph is a sentence or a group of sentences that
                             supports one central, unified idea. Paragraphs add
                             one idea at a time to your broader argument.
-                        </p>
-                    </Paper>
-                </Grid>
-                <Grid item xs={2}></Grid>
-                <Grid item xs={3}>
-                    <Paper className={classes.paper}>
-                        <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic.
                         </p>
                     </Paper>
                 </Grid>
