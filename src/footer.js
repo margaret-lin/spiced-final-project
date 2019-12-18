@@ -7,9 +7,10 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-        paddingTop: 20 + 'px',
-        height: 100 + 'px',
-        backgroundColor: '#194241'
+        paddingTop: 50 + 'px',
+        height: 400 + 'px',
+        backgroundColor: '#194241',
+        color: '#FFF'
     }
 }));
 
