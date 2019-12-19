@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import MapGL, { Source } from 'react-map-gl';
-// import Grid from '@material-ui/core/Grid';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Paper from '@material-ui/core/Paper';
-import { json as requestJson } from 'd3-request';
+import MapGL, { Source, Layer } from 'react-map-gl';
 
+import { dataLayer } from './map-style.js';
 const mapboxToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 export default function Map() {
@@ -16,21 +13,20 @@ export default function Map() {
         zoom: 3
     });
     const [data, setData] = useState(null);
-    // const [loadData, setLoadData] = useState()
 
     useEffect(() => {
-        requestJson(
-            './data/co2.geojson',
-            (err, res) => {
-                if (!err) {
-                    setData(res);
-                }
-            },
-            []
-        );
-    });
+        // console.log('CO2 is...', CO2)
+
+        fetch('/co2.geojson').then(res => {
+            console.log('res is', res);
+            res.json().then(data => {
+                console.log('data is', data);
+            });
+        });
+    }, [data]);
 
     const onViewportChange = viewport => setViewport({ ...viewport });
+    console.log('data', data);
     // const { viewport, data } = setState();
     return (
         <div className='map-page'>
@@ -39,9 +35,10 @@ export default function Map() {
                     {...viewport}
                     mapboxApiAccessToken={mapboxToken}
                     onViewportChange={onViewportChange}
-                    mapStyle='mapbox://styles/maaaama/ck477vjqb2oq91cowyitdnqcm'
                 >
-                    <Source type='geojson' data={data}></Source>
+                    <Source type='geojson' data={data}>
+                        <Layer {...dataLayer} />
+                    </Source>
                 </MapGL>
             </div>
         </div>
