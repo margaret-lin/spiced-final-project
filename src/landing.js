@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import Map from './Map';
+import Map from './Map/map';
 import { Learn } from './learn';
 import { GetInvolved } from './get-involved';
 import { Faq } from './faq';
