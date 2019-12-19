@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import './App.css';
 import { Header } from './header';
-import Map from './Map';
+import Map from './Map/map';
 import { Landing } from './landing';
 // import { Footer } from './footer';
 
