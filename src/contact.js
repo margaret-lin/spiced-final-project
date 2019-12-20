@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'space-evenly'
     },
     textField: {
-        width: '300px'
+        width: '350px'
     }
 }));
 
@@ -36,7 +36,7 @@ export function Contact() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} id='contact-container'>
             <h1 id='get-in-touch-title'>Get In Touch.</h1>
             <Grid container spacing={6}>
                 <Grid item xs={3}></Grid>
@@ -80,6 +80,7 @@ export function Contact() {
                         />
                         <TextField
                             label='Message'
+                            multiline
                             row='4'
                             variant='outlined'
                             className={classes.textField}

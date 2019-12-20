@@ -19,7 +19,9 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
         height: 'auto',
         color: theme.palette.text.secondary,
-        opacity: 0.7
+        opacity: 0.7,
+        fontSize: '1.2em',
+        fontWeight: 500
     }
 }));
 
@@ -33,23 +35,29 @@ export function Landing() {
                 <Grid item xs={3}>
                     <Paper className={classes.paper}>
                         <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity
+                            Global average temperature has increased by more
+                            than one degree celsius since pre-industrial times.
                         </p>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}></Grid>
-                <Grid item xs={7}></Grid>
+                <Grid item xs={2}></Grid>
+                <Grid item xs={2} id='landing-grid-container'>
+                    <Paper className={classes.paper} id='landing-grid-item'>
+                        <p>
+                            CO2 concentrations in the atmosphere are at their
+                            highest levels in over 800,000 years.
+                        </p>
+                    </Paper>
+                </Grid>
+                <Grid item xs={2}></Grid>
                 <Grid item xs={4}>
                     <Paper className={classes.paper}>
                         <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
+                            Carbon dioxide, a key greenhouse gas that drives
+                            global climate change, continues to rise every
+                            month. Find out the dangerous role it and other
+                            gases play.
                         </p>
                     </Paper>
                 </Grid>

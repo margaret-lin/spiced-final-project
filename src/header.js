@@ -17,9 +17,9 @@ const useStyles = makeStyles(theme => ({
         marginLeft: 25 + 'px'
     },
     button: {
-        fontSize: 20 + 'px',
+        fontSize: 1.2 + 'em',
         height: 70 + 'px',
-        width: 150 + 'px'
+        width: 170 + 'px'
     }
 }));
 
@@ -39,21 +39,29 @@ export function Header() {
                     </Link>
                 </Grid>
                 <Grid item xs={2}>
-                    <Link to='/map'>
+                    <a href='#map'>
                         <Button className={classes.button}>Map</Button>
-                    </Link>
+                    </a>
                 </Grid>
                 <Grid item xs={2}>
-                    <Button className={classes.button}>Learn</Button>
+                    <a href='#learn-container'>
+                        <Button className={classes.button}>Learn</Button>
+                    </a>
                 </Grid>
                 <Grid item xs={2}>
-                    <Button className={classes.button}>Get Involved</Button>
+                    <a href='#get-involved-container'>
+                        <Button className={classes.button}>Get Involved</Button>
+                    </a>
                 </Grid>
                 <Grid item xs={2}>
-                    <Button className={classes.button}>FAQ</Button>
+                    <a href='#faq-container'>
+                        <Button className={classes.button}>FAQ</Button>
+                    </a>
                 </Grid>
                 <Grid item xs={2}>
-                    <Button className={classes.button}>Contact</Button>
+                    <a href='#contact-container'>
+                        <Button className={classes.button}>Contact</Button>
+                    </a>
                 </Grid>
             </Grid>
         </div>

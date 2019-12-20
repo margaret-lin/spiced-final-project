@@ -30,37 +30,46 @@ export function Learn() {
                 <Grid item xs={2}></Grid>
                 <Grid item xs={3}>
                     <Paper className={classes.paper}>
+                        <h3>Carbon emissions</h3>
                         <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
+                            Emissions of carbon dioxide (CO2) are either natural
+                            or anthropic (due to human activity). Natural
+                            emissions are ones from natural wildfire, animal
+                            breathing, plants, aquatic microorganism, the ground
+                            or even volcanic origin. Anthropic emissions comes
+                            from heat
                         </p>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={classes.paper}>
+                        <h3>The Greenhouse Effect</h3>
                         <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
+                            The greenhouse effect occurs as light is absorbed by
+                            surface and oceans of the earth, transformed into
+                            heat, and re-radiated as infrared radiation. Certain
+                            portions of the Earth's atmosphere, the greenhouse
+                            gases, absorb the heat, and once again re-radiate it
+                            in all directions. The rapid increase in greenhouse
+                            gases during the 20th century has created an
+                            enhanced greenhouse effect, contributing to global
+                            warming.
                         </p>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={classes.paper}>
+                        <h3>Global Warming</h3>
                         <p>
-                            A paragraph is a series of related sentences
-                            developing a central idea, called the topic. Try to
-                            think about paragraphs in terms of thematic unity: a
-                            paragraph is a sentence or a group of sentences that
-                            supports one central, unified idea. Paragraphs add
-                            one idea at a time to your broader argument.
+                            Data from human records, tree rings, corals, and
+                            other sources show that average global temperatures
+                            rose by .41 degrees Celsius (.74 degrees Fahrenheit)
+                            during the 20th century, with the increase
+                            accelerating in the second half of the century. Some
+                            scientists suggest that climate change may result in
+                            cooling in some areas, as ocean and air currents
+                            change, and increased ocean evaporation results in
+                            cases of heavy localized snowfall.
                         </p>
                     </Paper>
                 </Grid>
