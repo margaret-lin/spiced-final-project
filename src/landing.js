@@ -62,24 +62,12 @@ export function Landing() {
                     </Paper>
                 </Grid>
             </Grid>
-            <div>
-                <Map />
-            </div>
-            <div>
-                <Learn />
-            </div>
-            <div>
-                <GetInvolved />
-            </div>
-            <div>
-                <Faq />
-            </div>
-            <div>
-                <Contact />
-            </div>
-            <div>
-                <Footer />
-            </div>
+            <Map />
+            <Learn />
+            <GetInvolved />
+            <Faq />
+            <Contact />
+            <Footer />
         </div>
     );
 }
