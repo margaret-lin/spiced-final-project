@@ -7,12 +7,11 @@ import { dataLayer } from './map-style.js';
 import { updatePercentiles } from './utils';
 import { json as requestJson } from 'd3-request';
 
-const MAPBOX_TOKEN =
-    'pk.eyJ1IjoibGtqZmxhamwiLCJhIjoiY2s0NXI4MzkxMGJlYzNmcGd1cTBuMTY3NyJ9.D8uq9RX3U97tnrvZPQ_Ofw'; // Set your mapbox token here
+const mapboxToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 export default class Map extends Component {
     state = {
-        year: 2015,
+        year: 1751,
         data: null,
         hoveredFeature: null,
         viewport: {
@@ -25,7 +24,7 @@ export default class Map extends Component {
     };
 
     componentDidMount() {
-        requestJson('co2-emissions.geojson', (error, response) => {
+        requestJson('co2-emission.geojson', (error, response) => {
             if (!error) {
                 this._loadData(response);
             }
@@ -44,7 +43,6 @@ export default class Map extends Component {
             const { data } = this.state;
             if (data) {
                 updatePercentiles(data, f => f.properties.co2Emission[value]);
-                // trigger update
                 this.setState({ data: { ...data } });
             }
         }
@@ -77,7 +75,7 @@ export default class Map extends Component {
                     <div>
                         Percentile:{' '}
                         {(
-                            (hoveredFeature.properties.percentile / 18) *
+                            (hoveredFeature.properties.percentile / 8) *
                             100
                         ).toFixed(2)}
                     </div>
@@ -98,9 +96,8 @@ export default class Map extends Component {
                         height='100%'
                         mapStyle='mapbox://styles/mapbox/light-v9'
                         onViewportChange={this._onViewportChange}
-                        mapboxApiAccessToken={MAPBOX_TOKEN}
+                        mapboxApiAccessToken={mapboxToken}
                         onHover={this._onHover}
-                        scrollZoom={false}
                     >
                         <Source type='geojson' data={data}>
                             <Layer {...dataLayer} />
