@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import MapGL, { Source, Layer } from 'react-map-gl';
 import ControlPanel from './control-panel';
 

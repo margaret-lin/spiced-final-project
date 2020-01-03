@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -28,7 +29,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'space-evenly'
     },
     textField: {
-        width: '350px'
+        width: '380px'
     }
 }));
 
@@ -85,6 +86,7 @@ export function Contact() {
                             variant='outlined'
                             className={classes.textField}
                         />
+                        <Button>Send</Button>
                     </form>
                 </Grid>
             </Grid>

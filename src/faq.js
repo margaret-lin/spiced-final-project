@@ -6,7 +6,6 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-// import { HelpOutlineIcon, QuestionAnswerIcon } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
     root: {
