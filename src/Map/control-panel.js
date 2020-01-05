@@ -37,6 +37,13 @@ export default class ControlPanel extends PureComponent {
                         }
                     />
                 </div>
+
+                <div>
+                    <p style={{ fontSize: '8px' }}>
+                        Double click to zoom in, or ctrl + double click to zoom
+                        out
+                    </p>
+                </div>
             </Container>
         );
     }

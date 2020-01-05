@@ -97,6 +97,7 @@ export default class Map extends Component {
                         onViewportChange={this._onViewportChange}
                         mapboxApiAccessToken={mapboxToken}
                         onHover={this._onHover}
+                        scrollZoom={false}
                     >
                         <Source type='geojson' data={data}>
                             <Layer {...dataLayer} />
