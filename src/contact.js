@@ -71,7 +71,11 @@ export function Contact() {
                         autoComplete='off'
                         sm={4}
                     >
-                        extField} />
+                        <TextField
+                            label='Name'
+                            variant='outlined'
+                            className={classes.textField}
+                        />
                         <TextField
                             label='Phone #'
                             variant='outlined'
