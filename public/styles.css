@@ -11,6 +11,25 @@ a:visited {
     text-decoration: none;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-wrapper {
+    position: relative;
+    height: 3rem; /* We need to change this value */
+}
+
+.sticky .sticky-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 .wrapper {
     min-height: 100%;
 }
@@ -79,11 +98,6 @@ a:visited {
     padding-top: 60px;
     margin-right: 330px;
 }
-
-/* #map {
-    width: 100vw;
-    height: 700px;
-} */
 
 #map {
     background-color: #faf0dc;
